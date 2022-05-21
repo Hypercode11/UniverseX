@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Comfortaa&family=Overpass&family=Quicksand&display=swap');
+body, html {
+  height: 100%;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Overpass', sans-serif;
+  user-select: none;
+  background-color: #131325;
+  color: whitesmoke;
+}
+div.image {
+  background-image: url("Images/universe.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+h1.xas{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 7rem;
+}
+p.ptx{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #1d5981;
+z-index: 999999;
+}
+.sk-folding-cube {
+ position: absolute;
+top: 48%;
+left: 48%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}h1{
+  font-family: 'Comfortaa', cursive;
+}
+h1.hed1{
+  float: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.scroll-container{
+  width: 30px;
+  height: 60px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  position:relative;
+  float:center;
+  top: 25px;
+  left: 250px;
+}
+
+div.scroller{
+  width: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 34px;
+  animation: scroller 1500ms ease-out infinite;
+}
+
+@keyframes scroller{
+  0%{
+    bottom: 34px;
+  }
+  5%{
+    top: 4px;
+  }
+  32%{    
+    bottom: 4px;
+  }
+  66%{
+    top: 34px;
+    bottom: 4px;
+  }
+  100%{
+    top: 4px;
+    bottom: 34px;
+  }
+}
+div.omot{
+ margin: 0 15vw 0 15vw;  
+ float: right; 
+ user-select: none;
+}
+p.pg1{
+  font-family: 'Quicksand', sans-serif;
+    margin: 0 5vw 0 5vw; 
+      user-select: none;
+     font-size: 1.3rem;
+}
+h1.satellites{
+   float: center;
+}
+div.launch{
+      margin: 0 15vw 0 15vw;  
+      float: left; 
+      user-select: none;
+}
+p.ls{
+  font-family: 'Comfortaa', cursive;
+  margin: 0 5vw 0 5vw;
+  user-select: none;
+  font-size: 1.3rem;
+}
+div.tourism{
+  float: center; 
+  user-select: none;
+}
+p.lastpg{
+  font-family: 'Quicksand', sans-serif;
+    margin: 0 13vw 0 13vw; 
+      user-select: none;
+     font-size: 1.3rem;
+}
+p.quote{
+  font-family: 'Assistant', sans-serif;
+   font-size: 1.5rem;
+    margin: 0 15vw 0 15vw;
+    user-select: none;
+}
+div.imagex {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Images/rocket.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
